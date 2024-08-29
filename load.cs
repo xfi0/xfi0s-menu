@@ -5,11 +5,7 @@ using UnityEngine;
 
 public static void Load()
 {
-	//IL_0094: Unknown result type (might be due to invalid IL or missing references)
-	//IL_00a8: Unknown result type (might be due to invalid IL or missing references)
-	//IL_00bc: Unknown result type (might be due to invalid IL or missing references)
-	//IL_00c6: Unknown result type (might be due to invalid IL or missing references)
-	//IL_00e5: Unknown result type (might be due to invalid IL or missing references)
+	
 	if (EasyInputs.GetThumbStickButtonDown((EasyHand)0) && EasyInputs.GetThumbStickButtonDown((EasyHand)1) && !menutogglecooldown)
 	{
 		menutogglecooldown = true;
