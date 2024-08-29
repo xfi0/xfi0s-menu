@@ -8,8 +8,6 @@ using UnityEngine;
 
 private static void UpdateMenuState(MenuOption option, string _MenuState, string OperationType)
 {
-	//IL_02c9: Unknown result type (might be due to invalid IL or missing references)
-	//IL_02ed: Unknown result type (might be due to invalid IL or missing references)
 	try
 	{
 		if (!(OperationType == "optionhit"))
@@ -45,6 +43,10 @@ private static void UpdateMenuState(MenuOption option, string _MenuState, string
 			if (option.AssociatedString == "Back")
 			{
 				CurrentViewingMenu = MainMenu;
+			}
+			if (option.AssociatedString == "Projectiles")
+			{
+				CurrentViewingMenu = Projectiles
 			}
 			MenuState = option.AssociatedString;
 			SelectedOptionIndex = 0;
